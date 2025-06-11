@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="images/Initials-logo.jpg"
+    />
+
+    <title>Dev/Mission - IoT - Internet of Things</title>
+
+    <!-- import the Bootstrap's stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- import the Lineicon's stylesheet -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <!-- import the Slick's stylesheet -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="left">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/full-logo.jpg"
+              alt="Dev/Mission Logo"
+              width="200"
+              height="44"
+              class="d-inline-block align-text-center rounded blend"
+            />
+          </a>
+        </div>
+        <div class="center">
+          <h1 class="align-text-center text-center">Internet of Things</h1>
+        </div>
+        <div class="mx-auto">
+          <div class="btn-group mb-2">
+            <button type="button" class="btn btn-primary jump btn-sm">
+              Jump to Week
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary jump dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Jump to Week</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recBPq8wNw2b8aK4w"
+                  >&lt; Week /1 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=rec9ODTWRnj3rAmXS"
+                  >&lt; Week /2 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recjb5uHS5YlJp9mA"
+                  >&lt; Week /3 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recFY4V6leW1DhNYr"
+                  >&lt; Week /4 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recSq2M5wpuj3LoPU"
+                  >&lt; Week /5 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=reckcU70bzv6tspVh"
+                  >&lt; Week /6 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recMam7YAo4ac05rY"
+                  >&lt; Week /7 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recXWU9MKnjX7kIBt"
+                  >&lt; Week /8 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recS6i8dkJC0jLL0Z"
+                  >&lt; Week /9 &gt;</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item disabled"
+                  href="https://dm-rpa-curriculum.glitch.me/10week-iot.html?id=recwtVXJPp9k8fuX0"
+                  >&lt; Week /10 &gt;</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--container with id 'content' where JavaScript pushes the Airtable data -->
+    <section id="main">
+      <div class="container-fluid">
+        <div id="hide">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="carousel">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="card it-weeks mx-auto">
+                  <img
+                    src="images/Initials-logo.jpg"
+                    alt="Dev/Mission initials logo"
+                    class="thumb"
+                  />
+
+                  <div class="card-body">
+                    <h5 class="card-title time">Internet of Things <br> Curriculum</h5>
+                    <i class="fa-solid fa-sliders fa-2x"></i>
+                    <br><br>
+                    <p class="card-text">
+                      Slide through to find each week's content
+                    </p>
+
+                    
+                  </div>
+                </div>
+              </div>
+              <div id="content"></div>
+              <!-- Other carousel items drop location -->
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </div>
+        </div>
+        <!--container with id 'curriculum' where JavaScript pushes the Airtable data -->
+        <div class="container-fluid tables">
+          <div class="row g-3" id="curriculum"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- import the webpage's javascript file -->
+    <script src="10week-iot.js" defer></script>
+
+    <!-- import the Bootstrap's javascript file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- import icons from Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/537b8e8b47.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
