@@ -50,8 +50,15 @@ h1 {
   height: 32rem;
   border: 2px solid #333333;
   text-align: center;
+  background-color: #e6f2ff;
 }
 
+.competency {
+  width: 30rem;
+  height: 32rem;
+  border: 2px solid #333333;
+  text-align: center;
+}
 
 .core {
   width: 30rem;
@@ -59,6 +66,7 @@ h1 {
   border: 2px solid #333333;
   text-align: center;
   margin-bottom: 2rem;
+  background-color: #e6f2ff;
 }
 
 .it-weeks {
@@ -137,6 +145,13 @@ iframe,
     text-align: center;
     margin-bottom: 2rem;
   }
+  .competency {
+  width: 20rem;
+  height: 28rem;
+  border: 2px solid #333333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
   .core {
     width: 22rem;
     height: 26rem;
@@ -198,6 +213,13 @@ iframe,
     text-align: center;
     margin-bottom: 2rem;
   }
+  .competency {
+  width: 18rem;
+  height: 26rem;
+  border: 2px solid #333333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
   .core {
     width: 20rem;
     height: 25rem;
@@ -239,7 +261,7 @@ iframe,
     margin-bottom: 2rem;
   }
   .accordion-body > img {
-    object-fit: fill;
+    object-fit: cover;
     width: 70vw !important;
     height: 22vh !important;
   }

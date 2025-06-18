@@ -35,7 +35,7 @@ async function getAllRecords() {
         newHtml += `
         <div class="carousel-item">
         
-         <div class="card it-weeks mx-auto">
+         <div class="card weeks mx-auto">
 ${
   thumbnail
     ? `<img class="card-img-top thumbs" alt="${deck}" src="${thumbnail[0].url}">`
