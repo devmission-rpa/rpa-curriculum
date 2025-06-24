@@ -15,9 +15,9 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
+  font-family: "Teko", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
   color: #333333;
 }
 
@@ -272,7 +272,7 @@ iframe,
     font-size: 1.5rem;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 1rem;
   }
   .btn-group {
