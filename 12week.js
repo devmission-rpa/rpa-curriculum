@@ -46,8 +46,8 @@ ${
     <h5 class="card-title time">${deck}</h5>
     <p class="card-text"><i class="fa-solid fa-file-code fa-2x"></i></p>
     <a href="index.html?id=${
-            data.records[i].id
-          }" class="btn btn-primary hovered ${disabled}">${name}</a>
+      data.records[i].id
+    }" class="btn btn-primary hovered ${disabled}">${name}</a>
 </div>
 </div>        
      </div> 
@@ -100,7 +100,7 @@ async function getOneRecord(id) {
       let embedDeck = data.fields["EmbedDeck"];
       let homework = data.fields["Homework"];
       let resources = data.fields["Resources"];
-      
+
       let newHtml = `
         <div class="accordion" id="accordionExample">
   <div class="accordion-item">

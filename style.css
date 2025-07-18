@@ -24,8 +24,8 @@ h1 {
 .dropdown-item,
 .dropdown-divider,
 .dropdown-menu {
-  max-width: 8rem; 
-  min-width: 6rem; 
+  max-width: 8rem;
+  min-width: 6rem;
   background-color: #cfe2ff;
   color: #333333;
 }
@@ -90,7 +90,7 @@ h1 {
   object-fit: cover;
   margin-top: 0;
   border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .core-thumb {
@@ -99,7 +99,7 @@ h1 {
   object-fit: cover;
   margin-top: 0;
   border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .time {
   font-size: 2rem;
@@ -131,13 +131,12 @@ iframe,
 /* sets the iframe mobile phones and tablets */
 @media screen and (max-width: 1545px) {
   .core {
-     
     margin-bottom: 2rem;
   }
 }
 
 /* sets the iframe mobile phones and tablets */
-@media screen and (min-width: 901px) and (max-width:1000px) {
+@media screen and (min-width: 901px) and (max-width: 1000px) {
   .weeks {
     width: 20rem;
     height: 28rem;
@@ -146,12 +145,12 @@ iframe,
     margin-bottom: 2rem;
   }
   .competency {
-  width: 20rem;
-  height: 28rem;
-  border: 2px solid #333333;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+    width: 20rem;
+    height: 28rem;
+    border: 2px solid #333333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   .core {
     width: 22rem;
     height: 26rem;
@@ -178,7 +177,7 @@ iframe,
     height: 12rem;
     object-fit: cover;
     margin-top: 0;
-}
+  }
   .core-thumb {
     width: 21.75rem;
     height: 14rem;
@@ -194,7 +193,7 @@ iframe,
   .iframe {
     margin-left: 1.5%;
   }
-} 
+}
 /* sets the iframe mobile phones and tablets */
 @media screen and (max-width: 900px) {
   iframe,
@@ -214,12 +213,12 @@ iframe,
     margin-bottom: 2rem;
   }
   .competency {
-  width: 18rem;
-  height: 26rem;
-  border: 2px solid #333333;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+    width: 18rem;
+    height: 26rem;
+    border: 2px solid #333333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   .core {
     width: 20rem;
     height: 25rem;
