@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.global/d910fa74-ae10-4905-8fd8-ca5e7d1c3b5d/Final%20Icon%20Logos-01.jpg?v=1741027872970"
-    />
+    <link rel="icon" href="images/Initials-logo.jpg" />
 
-    <title>Dev/Mission - Intro to Programming</title>
+    <title>Dev/Mission - IoT - Internet of Things</title>
+
+    <!-- import Teko and Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- import the Bootstrap's stylesheet -->
     <link
@@ -33,18 +38,15 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/12week.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <div class="left">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand" href="index.html">
             <img
-              src="https://cdn.glitch.global/d910fa74-ae10-4905-8fd8-ca5e7d1c3b5d/New%20Logo%20Full-01%20cropped.jpg?v=1741038708606"
+              src="images/full-logo.jpg"
               alt="Dev/Mission Logo"
               width="200"
               height="44"
@@ -53,7 +55,7 @@
           </a>
         </div>
         <div class="center">
-          <h1 class="align-text-center text-center">Intro to Programming</h1>
+          <h1 class="align-text-center text-center">Internet of Things</h1>
         </div>
         <div class="mx-auto">
           <div class="btn-group mb-2">
@@ -68,90 +70,8 @@
             >
               <span class="visually-hidden">Jump to Week</span>
             </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recICSAtA7X5PEuWo"
-                  >&lt; Week /1 &gt;</a
-                >
-              </li>
+            <ul class="dropdown-menu" id="menu">
               <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recgB5lTEYeX846PK"
-                  >&lt; Week /2 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recqYxWEFGTfqTTes"
-                  >&lt; Week /3 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recMLwn38PRVkLxQj"
-                  >&lt; Week /4 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recGDhwylZaC0Xlku"
-                  >&lt; Week /5 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recZdue2j0pdKf8HM"
-                  >&lt; Week /6 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recIfkrndElOi10qd"
-                  >&lt; Week /7 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recrZmzXYaq0aW9N9"
-                  >&lt; Week /8 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=recTXOzVnZZ4TuPjQ"
-                  >&lt; Week /9 &gt;</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://dm-intro-to-programming.glitch.me/index.html?id=rec4JmBJxYeROOstl"
-                  >&lt; Week /10 &gt;</a
-                >
-              </li>
-              <!--               <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="https://dm-intro-to-programming.glitch.me/index.html?id=recZTKAa7kxU0fvSR">&lt; Week /11 &gt;</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="https://dm-intro-to-programming.glitch.me/index.html?id=recDgnpGC04ePJePS">&lt; Week /12 &gt;</a></li> -->
             </ul>
           </div>
         </div>
@@ -164,20 +84,23 @@
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner" id="carousel">
               <div class="carousel-item active" data-bs-interval="10000">
-                <div class="card weeks mx-auto">
+                <div class="card competency mx-auto">
                   <img
-                    src="https://cdn.glitch.global/d910fa74-ae10-4905-8fd8-ca5e7d1c3b5d/Final%20Icon%20Logos-01.jpg?v=1741027872970"
+                    src="images/Initials-logo.jpg"
                     alt="Dev/Mission initials logo"
                     class="thumb"
                   />
 
                   <div class="card-body">
-                    <h5 class="card-title time">Curriculum</h5>
+                    <h5 class="card-title time">
+                      Internet of Things <br />
+                      Curriculum
+                    </h5>
+                    <i class="fa-solid fa-sliders fa-2x"></i>
+                    <br /><br />
                     <p class="card-text">
                       Slide through to find each week's content
                     </p>
-
-                    <i class="fa-solid fa-code fa-2x"></i>
                   </div>
                 </div>
               </div>
@@ -219,6 +142,9 @@
         </div>
       </div>
     </section>
+
+    <!-- import the webpage's javascript file -->
+    <script src="12week-iot.js" defer></script>
 
     <!-- import the Bootstrap's javascript file -->
     <script

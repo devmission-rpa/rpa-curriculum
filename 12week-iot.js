@@ -12,7 +12,7 @@ async function getAllRecords() {
   };
 
   await fetch(
-    `https://api.airtable.com/v0/app9L5qBODy38EOQj/12-week-coding?&view=order`,
+    `https://api.airtable.com/v0/app9L5qBODy38EOQj/12-week-iot?&view=order`,
     options
   )
     .then((response) => response.json())
@@ -44,8 +44,8 @@ ${
         
         <div class="card-body">
     <h5 class="card-title time">${deck}</h5>
-    <p class="card-text"><i class="fa-solid fa-file-code fa-2x"></i></p>
-    <a href="index.html?id=${
+    <p class="card-text"><i class="fa-solid fa-sliders fa-2x"></i></p>
+    <a href="10week-iot.html?id=${
       data.records[i].id
     }" class="btn btn-primary hovered ${disabled}">${name}</a>
 </div>
@@ -75,6 +75,47 @@ function myFunction() {
   }
 }
 
+//function for the dropdown menu
+async function dropdown() {
+  let dropdown = document.getElementById("menu");
+
+  const options = {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer pateLlLL3Evj5n668.64959c94a1466678bd5b8bc0f9dbaba961781766c4b2095e6364552540d9b739`,
+    },
+  };
+
+  await fetch(
+    `https://api.airtable.com/v0/app9L5qBODy38EOQj/12-week-iot?&view=order`,
+    options
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data); // response is an object w/ .records array
+
+      dropdown.innerHTML = "";
+
+      let otherHtml = "";
+      for (let i = 0; i < data.records.length; i++) {
+        let name = data.records[i].fields["Name"];
+        let disabled = data.records[i].fields["Disabled"];
+
+        otherHtml += `
+    <li>
+                <a
+                  class="dropdown-item ${disabled}"
+                  <a href="10week-iot.html?id=${data.records[i].id}">&lt; ${name} &gt;</a
+                >
+              </li>
+               <li><hr class="dropdown-divider" /></li>
+    `;
+
+        dropdown.innerHTML = otherHtml;
+      }
+    });
+}
+
 // function for our detail view
 async function getOneRecord(id) {
   let getResultElement = document.getElementById("curriculum");
@@ -87,7 +128,7 @@ async function getOneRecord(id) {
   };
 
   await fetch(
-    `https://api.airtable.com/v0/app9L5qBODy38EOQj/Content/${id}`,
+    `https://api.airtable.com/v0/app9L5qBODy38EOQj/12-week-iot/${id}`,
     options
   )
     .then((response) => response.json())
@@ -154,8 +195,13 @@ let idParams = window.location.search.split("?id=");
 if (idParams.length >= 2) {
   // call function to hide carousel in detail view
   myFunction();
+  // call function for the dropdown menu
+  dropdown();
   // has at least ["?id=", "OUR ID"]
   getOneRecord(idParams[1]); // create detail view HTML w/ our id
 } else {
+  // call function for the dropdown menu
+  dropdown();
+  // call function to display list view
   getAllRecords(); // no id given, fetch summaries
 }
