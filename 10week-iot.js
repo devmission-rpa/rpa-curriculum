@@ -45,7 +45,7 @@ ${
         <div class="card-body">
     <h5 class="card-title time">${deck}</h5>
     <p class="card-text"><i class="fa-solid fa-sliders fa-2x"></i></p>
-    <a href="10week-iot.html?id=${
+    <a href="iot.html?id=${
       data.records[i].id
     }" class="btn btn-primary hovered ${disabled}">${name}</a>
 </div>
@@ -105,7 +105,7 @@ async function dropdown() {
     <li>
                 <a
                   class="dropdown-item ${disabled}"
-                  <a href="10week-iot.html?id=${data.records[i].id}">&lt; ${name} &gt;</a
+                  <a href="iot.html?id=${data.records[i].id}">&lt; ${name} &gt;</a
                 >
               </li>
                <li><hr class="dropdown-divider" /></li>
